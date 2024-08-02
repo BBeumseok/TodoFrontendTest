@@ -14,7 +14,7 @@ function App() {
   useEffect(() =>{
     call("/todo", "GET", null).then((response) => {
       setItems(response.data);  
-      setLoading(false);      //로딩 끝
+      setLoading(false);      //로딩 끝 
     });
   },[]);
 
